@@ -19,10 +19,10 @@ This repo was tested with Python 3.5, PyTorch 1.0.0, and CUDA 9.0.
    
    Write your teacher directory in `setting.py`.
    
-2. Run distillation by following commands in `scripts/run_multi_teacher.sh`. 
+2. Run distillation by following commands
 
     ```sh
-    python3 train_multiTeacher.py --distill --dataset --model_s \
+    python3 train_student.py --distill --dataset --model_s \
     	-r -a -b -C --trial --teacher_num --ensemble_method
     ```
     where the flags are explained as:
@@ -53,4 +53,13 @@ This repo is built upon [Repdistiller](https://github.com/HobbitLong/RepDistille
 
 If you find this repo useful for your research, please consider citing the paper
 
-(To be finished)
+```
+@article{du2020agree,
+  title={Agree to Disagree: Adaptive Ensemble Knowledge Distillation in Gradient Space},
+  author={Du, Shangchen and You, Shan and Li, Xiaojie and Wu, Jianlong and Wang, Fei and Qian, Chen and Zhang, Changshui},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+```
+
